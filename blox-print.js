@@ -46,12 +46,13 @@ class BloxPrint extends PolymerElement {
       printWindow.document.write(htmlToPrint);
       printWindow.document.close();
       printWindow.focus();
-      setTimeout(function () { 
+      setTimeout(() => { 
         printWindow.print(); 
       }, 500);
-      printWindow.onfocus = function () { 
-        setTimeout(function () { 
+      printWindow.onfocus = () => { 
+        setTimeout(() => { 
           printWindow.close(); 
+          resolve();
         }, 500); 
       }
     })
