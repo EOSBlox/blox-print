@@ -2,7 +2,7 @@
   "name": "blox-print",
   "description": "A component that prints the given HTML",
   "main": "blox-print.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "@bkawk",
   "license": "MIT",
   "repository": "https://github.com/eosblox/blox-print",
