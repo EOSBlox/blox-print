@@ -16,7 +16,6 @@ class BloxPrint extends PolymerElement {
           display: block;
         }
       </style>
-      <h2>Hello [[prop1]]!</h2>
     `;
   }
   static get properties() {
@@ -41,7 +40,6 @@ class BloxPrint extends PolymerElement {
   }
   print(htmlToPrint){
     return new Promise((resolve, reject) => {
-      console.log(htmlToPrint)
       var printWindow=window.open('','','width=200,height=100');
       printWindow.document.write(htmlToPrint);
       printWindow.document.close();
